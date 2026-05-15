@@ -36,20 +36,42 @@ Additionally, a multi-model pipeline is developed to compute an **aggregated ski
 
 ## Project Structure 
 
+
 ```text
 .
 ├── acne/
-│   ├── models/
-│   └── experiments/
+│   └── experiments/        # notebooks for acne segmentation experiments
 ├── wrinkles/
-│   ├── models/
-│   └── experiments/
-├── evenness/
-│   └── experiments/
+│   └── experiments/        # notebooks for wrinkle segmentation experiments
+├── skin_evenness/
+│   ├── experiments/        # notebooks for tone and texture evenness analysis
+│   ├── utils/              # MediaPipe FaceMesh landmarks and helper utilities
+│   ├── models/             # MediaPipe FaceMesh model
+│   └── results/            # calculated tone and texture evenness scores for FFHQ-Wrinkle dataset
+├── preprocess/             # CLAHE conditioned on ITA preprocessing experiments
+├── overall_skin_assesment.ipynb          # overall facial skin assessment pipeline
 ```
 
+The `experiments/` folders contain Jupyter notebooks with the implementation of experiments for each facial feature.
+
+For the skin evenness analysis, the `utils/` folder additionally contains MediaPipe FaceMesh landmarks used for facial ROI extraction, while the `models/` folder stores the MediaPipe FaceMesh model itself.
+
+The `results/` folder contains precomputed tone and texture evenness scores for individuals from the FFHQ-Wrinkle dataset.
+
+The `preprocess/` folder contains notebooks related to preprocessing experiments, including the implementation of the CLAHE transformation conditioned on ITA, which is used to enhance contrast under varying illumination and skin tone conditions.
+
+The `overall_skin_assesment.ipynb` notebook combines all developed approaches into one pipeline and computes the final aggregated facial skin assessment score.
 
 ---
+
+## Models
+
+The best-performing models for both acne segmentation and wrinkle detection are available on Google Drive:
+
+- Acne segmentation model: [Google Drive Link]([YOUR_LINK_HERE](https://drive.google.com/file/d/1JpJ_yMaXxowaJpTBC1lgN54_PWeubrFR/view?usp=sharing))
+- Wrinkle segmentation model: [Google Drive Link](https://drive.google.com/file/d/1vjOU7pGVKFKyd7Ui122RYa8NrsQdcOYj/view?usp=sharing)
+
+These checkpoints correspond to the final versions used in the thesis experiments.
 
 ## Datasets
 
