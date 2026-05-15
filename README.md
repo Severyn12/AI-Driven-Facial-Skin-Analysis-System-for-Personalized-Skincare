@@ -1,7 +1,5 @@
 # AI-Driven-Facial-Skin-Analysis-System-for-Personalized-Skincare
 
-# AI-Driven Facial Skin Analysis System for Personalized Skincare
-
 ##
 This repository contains the implementation of experiments for the thesis:
 
