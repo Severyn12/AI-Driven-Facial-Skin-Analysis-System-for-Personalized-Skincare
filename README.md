@@ -68,7 +68,7 @@ The `overall_skin_assesment.ipynb` notebook combines all developed approaches in
 
 The best-performing models for both acne segmentation and wrinkle detection are available on Google Drive:
 
-- Acne segmentation model: [Google Drive Link]([YOUR_LINK_HERE](https://drive.google.com/file/d/1JpJ_yMaXxowaJpTBC1lgN54_PWeubrFR/view?usp=sharing))
+- Acne segmentation model: [Google Drive Link](https://drive.google.com/file/d/1JpJ_yMaXxowaJpTBC1lgN54_PWeubrFR/view?usp=sharing)
 - Wrinkle segmentation model: [Google Drive Link](https://drive.google.com/file/d/1vjOU7pGVKFKyd7Ui122RYa8NrsQdcOYj/view?usp=sharing)
 
 These checkpoints correspond to the final versions used in the thesis experiments.
